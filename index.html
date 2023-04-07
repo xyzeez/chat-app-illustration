@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 </head>
 <body>
-
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <main>
+        <h1 class="sr-only">A section containing a styled chat app template and contents</h1>
+        <section class="diagram">
+            <h2 class="sr-only">A styled chat app illustration</h2>
+            <div class="diagram__container">
+                <div class="diagram__header">
+                    <img src="./assets/images/angle-left-solid.svg" alt="" class="diagram__header-icon diagram__header-icon1">
+                    <figure class="diagram__header-detail">
+                        <img src="./assets/images/avatar.jpg" alt="Samuel's Profile Picture" class="diagram__header-avatar">
+                        <figcaption class="diagram__header-info">
+                            Samuel Green
+                            <span class="diagram__header-status">Available to Walk</span>
+                        </figcaption>
+                    </figure>
+                    <img src="./assets/images/ellipsis-vertical-solid.svg" alt="" class="diagram__header-icon diagram__header-icon2">
+                </div>
+                <div class="diagram__main">
+                    <p class="diagram__message diagram__message-received diagram__message-received-text">That sounds great. I’d be happy with that.</p>
+                    <p class="diagram__message diagram__message-received diagram__message-received-text">Could you send over some pictures of your dog, please?</p>
+                    <div class="diagram__message-gallery diagram__message-sent">
+                        <img src="./assets/images/dog-image-1.jpg" alt="" class="diagram__message-image">
+                        <img src="./assets/images/dog-image-2.jpg" alt="" class="diagram__message-image">
+                        <img src="./assets/images/dog-image-3.jpg" alt="" class="diagram__message-image">
+                    </div>
+                    <p class="diagram__message diagram__message-sent diagram__message-sent-text">Here are a few pictures. She’s a happy girl!</p>
+                    <p class="diagram__message diagram__message-sent diagram__message-sent-text">Can you make it?</p>
+                    <p class="diagram__message diagram__message-received diagram__message-received-text">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                    <p class="diagram__message-option diagram__message-option1 diagram__message-sent">30 minute walk</p>
+                    <p class="diagram__message-option diagram__message-option2 diagram__message-sent">1 hour walk</p>
+                </div>
+                <div class="diagram__chatbox">
+                    <p class="diagram__chatbox-text">Type a message…</p>
+                    <img src="./assets/images/angle-right-solid.svg" alt="" class="diagram__chatbox-icon">
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <h2 class="content__title">Simple booking</h2>
+            <p class="content__paragraph">
+                Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+                discuss arrangements and make bookings. Once the walk has been completed you can rate 
+                your walker and book again all through the chat.
+            </p>
+        </section>
+    </main>
 </body>
 </html>
